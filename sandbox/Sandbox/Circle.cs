@@ -1,7 +1,7 @@
 
 class Circle
 {
-    public double _radius;
+    private double _radius;
 
     public double GetRaidius()
     {

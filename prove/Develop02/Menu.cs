@@ -3,7 +3,7 @@ class Menu
 {
     public string [] _menuStrings = {
         "Welcome to the Journal Program","You can creat Display, Save, and Load Jornal Entries",
-        "1 - create Journal Entry",
+        "1 - Create Journal Entry",
         "2 - Display Journal",
         "3 - Save Journal to file",
         "4 - Read Journal from file",
