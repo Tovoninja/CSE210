@@ -30,13 +30,12 @@ class ListingActivity : Activity
 
         Console.Clear();
         Console.WriteLine("List as many responses as you can to the following prompt:");
-        Console.WriteLine();
-        Console.WriteLine(GetNextPrompt());
-        Console.WriteLine();
         Console.Write("You may begin in: ");
         ShowCountdown(5);
-        Console.WriteLine();
-        Console.WriteLine();
+        Console.WriteLine(GetNextPrompt());
+        
+        
+
 
         DateTime endTime = DateTime.Now.AddSeconds(GetDuration());
         int itemCount = 0;
@@ -73,7 +72,7 @@ class ListingActivity : Activity
 
     private void RefillPromptQueue()
     {
-        List<string> shuffled = new List<string>(_prompts);
+        List<string> shuffled = _prompts;
         ShuffleList(shuffled);
 
         foreach (string item in shuffled)
