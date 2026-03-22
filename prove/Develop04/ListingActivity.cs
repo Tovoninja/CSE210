@@ -31,7 +31,7 @@ class ListingActivity : Activity
         Console.Clear();
         Console.WriteLine("List as many responses as you can to the following prompt:");
         Console.WriteLine();
-        Console.WriteLine($"--- {GetNextPrompt()} ---");
+        Console.WriteLine(GetNextPrompt());
         Console.WriteLine();
         Console.Write("You may begin in: ");
         ShowCountdown(5);
