@@ -49,7 +49,7 @@ class ReflectionActivity : Activity
         Console.Clear();
         Console.WriteLine("Consider the following prompt:");
         Console.WriteLine();
-        Console.WriteLine($"--- {GetNextPrompt()} ---");
+        Console.WriteLine(GetNextPrompt());
         Console.WriteLine();
         Console.WriteLine("When you have something in mind, press Enter to continue.");
         Console.ReadLine();
