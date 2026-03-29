@@ -1,5 +1,5 @@
 
-class Person
+abstract class Person
 {
     private string _firstName;
     private string _lastName;
@@ -20,9 +20,15 @@ class Person
         return $"Name: {_firstName}{_lastName}, age: {_age} weight{_weight}";
     }
 
+    public abstract double GetSalary();
+
     public void SetFirstName(int weight)
     {
         _weight = weight;
     }
 
+    public static void ProcessPerson(Person person)
+    {
+        Console.Write(person.GetPersonInformation())
+    }
 }

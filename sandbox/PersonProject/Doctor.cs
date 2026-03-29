@@ -12,4 +12,8 @@ class Police : Person
     {
         return $"Tools: {_tools}, {GetPersonInformation()}";
     }
+    public override double GetSalary()
+    {
+        return 397542.23;
+    }
 }
